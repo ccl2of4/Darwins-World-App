@@ -1,0 +1,411 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B34B7E8E1A11837300915F1E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B34B7E8D1A11837300915F1E /* main.m */; };
+		B34B7E911A11837300915F1E /* DWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B34B7E901A11837300915F1E /* DWAppDelegate.m */; };
+		B34B7E941A11837300915F1E /* Darwins_World.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B34B7E921A11837300915F1E /* Darwins_World.xcdatamodeld */; };
+		B34B7E9C1A11837300915F1E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B34B7E9B1A11837300915F1E /* Images.xcassets */; };
+		B34B7EAB1A11837300915F1E /* Darwins_WorldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B34B7EAA1A11837300915F1E /* Darwins_WorldTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B34B7EA51A11837300915F1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B34B7E801A11837300915F1E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B34B7E871A11837300915F1E;
+			remoteInfo = "Darwins World";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B34B7E881A11837300915F1E /* Darwins World.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Darwins World.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B34B7E8C1A11837300915F1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B34B7E8D1A11837300915F1E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B34B7E8F1A11837300915F1E /* DWAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DWAppDelegate.h; sourceTree = "<group>"; };
+		B34B7E901A11837300915F1E /* DWAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DWAppDelegate.m; sourceTree = "<group>"; };
+		B34B7E931A11837300915F1E /* Darwins_World.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Darwins_World.xcdatamodel; sourceTree = "<group>"; };
+		B34B7E9B1A11837300915F1E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B34B7EA41A11837300915F1E /* Darwins WorldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Darwins WorldTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B34B7EA91A11837300915F1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B34B7EAA1A11837300915F1E /* Darwins_WorldTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Darwins_WorldTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B34B7E851A11837300915F1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B34B7EA11A11837300915F1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B34B7E7F1A11837300915F1E = {
+			isa = PBXGroup;
+			children = (
+				B34B7E8A1A11837300915F1E /* Darwins World */,
+				B34B7EA71A11837300915F1E /* Darwins WorldTests */,
+				B34B7E891A11837300915F1E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B34B7E891A11837300915F1E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B34B7E881A11837300915F1E /* Darwins World.app */,
+				B34B7EA41A11837300915F1E /* Darwins WorldTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B34B7E8A1A11837300915F1E /* Darwins World */ = {
+			isa = PBXGroup;
+			children = (
+				B34B7E8F1A11837300915F1E /* DWAppDelegate.h */,
+				B34B7E901A11837300915F1E /* DWAppDelegate.m */,
+				B34B7E9B1A11837300915F1E /* Images.xcassets */,
+				B34B7E921A11837300915F1E /* Darwins_World.xcdatamodeld */,
+				B34B7E8B1A11837300915F1E /* Supporting Files */,
+			);
+			path = "Darwins World";
+			sourceTree = "<group>";
+		};
+		B34B7E8B1A11837300915F1E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B34B7E8C1A11837300915F1E /* Info.plist */,
+				B34B7E8D1A11837300915F1E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B34B7EA71A11837300915F1E /* Darwins WorldTests */ = {
+			isa = PBXGroup;
+			children = (
+				B34B7EAA1A11837300915F1E /* Darwins_WorldTests.m */,
+				B34B7EA81A11837300915F1E /* Supporting Files */,
+			);
+			path = "Darwins WorldTests";
+			sourceTree = "<group>";
+		};
+		B34B7EA81A11837300915F1E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B34B7EA91A11837300915F1E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B34B7E871A11837300915F1E /* Darwins World */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B34B7EAE1A11837300915F1E /* Build configuration list for PBXNativeTarget "Darwins World" */;
+			buildPhases = (
+				B34B7E841A11837300915F1E /* Sources */,
+				B34B7E851A11837300915F1E /* Frameworks */,
+				B34B7E861A11837300915F1E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Darwins World";
+			productName = "Darwins World";
+			productReference = B34B7E881A11837300915F1E /* Darwins World.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B34B7EA31A11837300915F1E /* Darwins WorldTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B34B7EB11A11837300915F1E /* Build configuration list for PBXNativeTarget "Darwins WorldTests" */;
+			buildPhases = (
+				B34B7EA01A11837300915F1E /* Sources */,
+				B34B7EA11A11837300915F1E /* Frameworks */,
+				B34B7EA21A11837300915F1E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B34B7EA61A11837300915F1E /* PBXTargetDependency */,
+			);
+			name = "Darwins WorldTests";
+			productName = "Darwins WorldTests";
+			productReference = B34B7EA41A11837300915F1E /* Darwins WorldTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B34B7E801A11837300915F1E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Connor Lirot";
+				TargetAttributes = {
+					B34B7E871A11837300915F1E = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					B34B7EA31A11837300915F1E = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = B34B7E871A11837300915F1E;
+					};
+				};
+			};
+			buildConfigurationList = B34B7E831A11837300915F1E /* Build configuration list for PBXProject "Darwins World" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B34B7E7F1A11837300915F1E;
+			productRefGroup = B34B7E891A11837300915F1E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B34B7E871A11837300915F1E /* Darwins World */,
+				B34B7EA31A11837300915F1E /* Darwins WorldTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B34B7E861A11837300915F1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B34B7E9C1A11837300915F1E /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B34B7EA21A11837300915F1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B34B7E841A11837300915F1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B34B7E941A11837300915F1E /* Darwins_World.xcdatamodeld in Sources */,
+				B34B7E911A11837300915F1E /* DWAppDelegate.m in Sources */,
+				B34B7E8E1A11837300915F1E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B34B7EA01A11837300915F1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B34B7EAB1A11837300915F1E /* Darwins_WorldTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B34B7EA61A11837300915F1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B34B7E871A11837300915F1E /* Darwins World */;
+			targetProxy = B34B7EA51A11837300915F1E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B34B7EAC1A11837300915F1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B34B7EAD1A11837300915F1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B34B7EAF1A11837300915F1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Darwins World/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B34B7EB01A11837300915F1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Darwins World/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B34B7EB21A11837300915F1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Darwins WorldTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Darwins World.app/Darwins World";
+			};
+			name = Debug;
+		};
+		B34B7EB31A11837300915F1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Darwins WorldTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Darwins World.app/Darwins World";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B34B7E831A11837300915F1E /* Build configuration list for PBXProject "Darwins World" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B34B7EAC1A11837300915F1E /* Debug */,
+				B34B7EAD1A11837300915F1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B34B7EAE1A11837300915F1E /* Build configuration list for PBXNativeTarget "Darwins World" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B34B7EAF1A11837300915F1E /* Debug */,
+				B34B7EB01A11837300915F1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B34B7EB11A11837300915F1E /* Build configuration list for PBXNativeTarget "Darwins WorldTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B34B7EB21A11837300915F1E /* Debug */,
+				B34B7EB31A11837300915F1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B34B7E921A11837300915F1E /* Darwins_World.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B34B7E931A11837300915F1E /* Darwins_World.xcdatamodel */,
+			);
+			currentVersion = B34B7E931A11837300915F1E /* Darwins_World.xcdatamodel */;
+			path = Darwins_World.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B34B7E801A11837300915F1E /* Project object */;
+}
