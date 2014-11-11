@@ -23,6 +23,7 @@
 
 @property (nonatomic) UIView *tempSpeciesView;
 @property (nonatomic) NSIndexPath *tempSpeciesIndexPath;
+@property (nonatomic) NSIndexPath *tempDestinationIndexPath;
 
 @end
 
@@ -135,6 +136,19 @@ static const NSInteger tempSpeciesViewNameTag = 1;
         case UIGestureRecognizerStateChanged: {
             if (self.tempSpeciesIndexPath) {
                 [self.tempSpeciesView setCenter:[panner locationInView:[self view]]];
+                
+                NSIndexPath *indexPath = [self.darwinCollectionView indexPathForItemAtPoint:[panner locationInView:self.darwinCollectionView]];
+                if (indexPath != self.tempDestinationIndexPath) {
+                    if (self.tempDestinationIndexPath) {
+                        UICollectionViewCell *oldCell = [self.darwinCollectionView cellForItemAtIndexPath:self.tempDestinationIndexPath];
+                        [oldCell.contentView setBackgroundColor:[UIColor grayColor]];
+                    }
+                    if (![self.darwin creatureAtPoint:CGPointMake(indexPath.section, indexPath.item)]) {
+                        self.tempDestinationIndexPath = indexPath;
+                        UICollectionViewCell *newCell = [self.darwinCollectionView cellForItemAtIndexPath:indexPath];
+                        [newCell.contentView setBackgroundColor:[UIColor lightGrayColor]];
+                    }
+                }
             }
             break;
         }
@@ -143,9 +157,10 @@ static const NSInteger tempSpeciesViewNameTag = 1;
         case UIGestureRecognizerStateCancelled:
         case UIGestureRecognizerStateFailed: {
             if (self.tempSpeciesIndexPath) {
-                NSIndexPath *indexPath = [self.darwinCollectionView indexPathForItemAtPoint:[panner locationInView:self.darwinCollectionView]];
-                if (indexPath) {
-                    CGPoint point = CGPointMake(indexPath.section, indexPath.item);
+                if (self.tempDestinationIndexPath) {
+                    UICollectionViewCell *cell = [self.darwinCollectionView cellForItemAtIndexPath:self.tempDestinationIndexPath];
+                    [cell.contentView setBackgroundColor:[UIColor grayColor]];
+                    CGPoint point = CGPointMake(self.tempDestinationIndexPath.section, self.tempDestinationIndexPath.item);
                     Species *species = [[self fetchedResultsController] objectAtIndexPath:self.tempSpeciesIndexPath];
                     Creature *creature = [[Creature alloc] initWithSpecies:species];
                     [creature setDelegate:self.darwin];
