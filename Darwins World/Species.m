@@ -21,4 +21,8 @@
     }];
 }
 
+- (BOOL)isEqual:(id)object {
+    return [object isKindOfClass:[Species class]] && [[object name] isEqualToString:[self name]];
+}
+
 @end

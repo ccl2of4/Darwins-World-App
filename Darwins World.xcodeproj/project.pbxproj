@@ -11,6 +11,10 @@
 		B3007DF11A11EE0D0074D715 /* EditSpeciesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3007DEF1A11EE0D0074D715 /* EditSpeciesViewController.xib */; };
 		B3007E011A11F7570074D715 /* Instruction.m in Sources */ = {isa = PBXBuildFile; fileRef = B3007E001A11F7570074D715 /* Instruction.m */; };
 		B3007E041A11F7570074D715 /* Species.m in Sources */ = {isa = PBXBuildFile; fileRef = B3007E031A11F7570074D715 /* Species.m */; };
+		B30ECC881A128BA80070BF80 /* PlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B30ECC861A128BA80070BF80 /* PlayViewController.m */; };
+		B30ECC891A128BA80070BF80 /* PlayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B30ECC871A128BA80070BF80 /* PlayViewController.xib */; };
+		B30ECC8C1A128BEE0070BF80 /* Darwin.m in Sources */ = {isa = PBXBuildFile; fileRef = B30ECC8B1A128BEE0070BF80 /* Darwin.m */; };
+		B30ECC8F1A128E9B0070BF80 /* Creature.m in Sources */ = {isa = PBXBuildFile; fileRef = B30ECC8E1A128E9B0070BF80 /* Creature.m */; };
 		B34B7E8E1A11837300915F1E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B34B7E8D1A11837300915F1E /* main.m */; };
 		B34B7E911A11837300915F1E /* DWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B34B7E901A11837300915F1E /* DWAppDelegate.m */; };
 		B34B7E941A11837300915F1E /* Darwins_World.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B34B7E921A11837300915F1E /* Darwins_World.xcdatamodeld */; };
@@ -41,6 +45,13 @@
 		B3007E001A11F7570074D715 /* Instruction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Instruction.m; sourceTree = "<group>"; };
 		B3007E021A11F7570074D715 /* Species.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Species.h; sourceTree = "<group>"; };
 		B3007E031A11F7570074D715 /* Species.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Species.m; sourceTree = "<group>"; };
+		B30ECC851A128BA80070BF80 /* PlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayViewController.h; sourceTree = "<group>"; };
+		B30ECC861A128BA80070BF80 /* PlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayViewController.m; sourceTree = "<group>"; };
+		B30ECC871A128BA80070BF80 /* PlayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayViewController.xib; sourceTree = "<group>"; };
+		B30ECC8A1A128BEE0070BF80 /* Darwin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Darwin.h; sourceTree = "<group>"; };
+		B30ECC8B1A128BEE0070BF80 /* Darwin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Darwin.m; sourceTree = "<group>"; };
+		B30ECC8D1A128E9B0070BF80 /* Creature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Creature.h; sourceTree = "<group>"; };
+		B30ECC8E1A128E9B0070BF80 /* Creature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Creature.m; sourceTree = "<group>"; };
 		B34B7E881A11837300915F1E /* Darwins World.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Darwins World.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B34B7E8C1A11837300915F1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B34B7E8D1A11837300915F1E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -107,6 +118,9 @@
 				B3B0622B1A118762005D8D78 /* RootViewController.h */,
 				B3B0622C1A118762005D8D78 /* RootViewController.m */,
 				B3B0622D1A118762005D8D78 /* RootViewController.xib */,
+				B30ECC851A128BA80070BF80 /* PlayViewController.h */,
+				B30ECC861A128BA80070BF80 /* PlayViewController.m */,
+				B30ECC871A128BA80070BF80 /* PlayViewController.xib */,
 				B3007DED1A11EE0D0074D715 /* EditSpeciesViewController.h */,
 				B3007DF51A11F0DE0074D715 /* EditSpeciesViewController+Protected.h */,
 				B3007DEE1A11EE0D0074D715 /* EditSpeciesViewController.m */,
@@ -151,6 +165,10 @@
 				B3007DFF1A11F7570074D715 /* Instruction.h */,
 				B3007E001A11F7570074D715 /* Instruction.m */,
 				B34B7E921A11837300915F1E /* Darwins_World.xcdatamodeld */,
+				B30ECC8A1A128BEE0070BF80 /* Darwin.h */,
+				B30ECC8B1A128BEE0070BF80 /* Darwin.m */,
+				B30ECC8D1A128E9B0070BF80 /* Creature.h */,
+				B30ECC8E1A128E9B0070BF80 /* Creature.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -239,6 +257,7 @@
 				B34B7E9C1A11837300915F1E /* Images.xcassets in Resources */,
 				B3B062371A118AE3005D8D78 /* Default-568h@2x.png in Resources */,
 				B3007DF11A11EE0D0074D715 /* EditSpeciesViewController.xib in Resources */,
+				B30ECC891A128BA80070BF80 /* PlayViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,10 +278,13 @@
 				B34B7E941A11837300915F1E /* Darwins_World.xcdatamodeld in Sources */,
 				B3B0622E1A118762005D8D78 /* RootViewController.m in Sources */,
 				B3007E011A11F7570074D715 /* Instruction.m in Sources */,
+				B30ECC8F1A128E9B0070BF80 /* Creature.m in Sources */,
 				B34B7E911A11837300915F1E /* DWAppDelegate.m in Sources */,
 				B3B062351A118A7F005D8D78 /* NSManagedObjectContext+DarwinsWorld.m in Sources */,
 				B34B7E8E1A11837300915F1E /* main.m in Sources */,
+				B30ECC8C1A128BEE0070BF80 /* Darwin.m in Sources */,
 				B3007DF01A11EE0D0074D715 /* EditSpeciesViewController.m in Sources */,
+				B30ECC881A128BA80070BF80 /* PlayViewController.m in Sources */,
 				B3007E041A11F7570074D715 /* Species.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
