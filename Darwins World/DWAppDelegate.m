@@ -7,6 +7,7 @@
 //
 
 #import "DWAppDelegate.h"
+#import "RootViewController.h"
 
 @interface DWAppDelegate ()
 
@@ -19,6 +20,11 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    [self.window setRootViewController:
+     [[UINavigationController alloc] initWithRootViewController:[RootViewController new]]
+     ];
+    
     [self.window makeKeyAndVisible];
     
     return YES;
