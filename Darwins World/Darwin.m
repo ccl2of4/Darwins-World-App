@@ -44,7 +44,7 @@
 
 - (void)enumerateCreaturesOnBoardUsingBlock:(void (^)(Creature *creature, CGPoint point, BOOL *stop))block {
     [self.board enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-        Creature *creature = obj == [NSNull null] ? obj : NULL;
+        Creature *creature = obj == [NSNull null] ? obj : nil;
         block (creature, [self indexToPoint:idx], stop);
     }];
 }
@@ -58,6 +58,13 @@
 
 -(void)addCreature:(Creature *)creature point:(CGPoint)point {
     return [self addCreature:creature index:[self pointToIndex:point]];
+}
+
+-(Creature *)creatureAtPoint:(CGPoint)point {
+    NSInteger index = [self pointToIndex:point];
+    assert (index < [self.board count]);
+    id creature = self.board[index];
+    return creature == [NSNull null] ? nil : creature;
 }
 
 -(void)run:(NSUInteger)numberOfTurns {
@@ -93,20 +100,22 @@
 
 -(BOOL)creatureIsFacingEmpty:(Creature *)creature {
     NSUInteger adjacentSpace = [self indexOfAdjacentSpace:creature];
-    return adjacentSpace != -1 && self.board[adjacentSpace] == [NSNull null];
+    return adjacentSpace != NSNotFound && self.board[adjacentSpace] == [NSNull null];
 }
 
 -(BOOL)creatureIsFacingWall:(Creature *)creature {
     NSUInteger adjacentSpace = [self indexOfAdjacentSpace:creature];
-    return adjacentSpace == -1;
+    return adjacentSpace == NSNotFound;
 }
 
 -(Creature *)enemyInFrontOfCreature:(Creature *)creature {
     NSUInteger adjacentSpace = [self indexOfAdjacentSpace:creature];
-    Creature *result = NULL;
-    if (adjacentSpace != -1 && (result = _board[adjacentSpace]))
-        if ([[result species] isEqual:[creature species]])
-            result = NULL;
+    id result = nil;
+    if (adjacentSpace != NSNotFound && _board[adjacentSpace] != [NSNull null]) {
+        result = _board[adjacentSpace];
+        if ([result species] == [creature species])
+            result = nil;
+    }
     return result;
 }
 
@@ -115,13 +124,13 @@
     NSUInteger occupiedSpace = [self indexOfCreature:creature];
     NSUInteger adjacentSpace = [self indexOfAdjacentSpace:creature];
     self.board[adjacentSpace] = self.board[occupiedSpace];
-    self.board[occupiedSpace] = NULL;
+    self.board[occupiedSpace] = [NSNull null];
 }
 
 - (NSUInteger) indexOfCreature:(Creature *)creature {
     /* we have cached the location of the creature whose turn it currently is,
      but we can also look up other creatures in linear time if necessary */
-    if ([creature isEqual:self.board[self.indexOfActiveCreature]]) {
+    if (creature == self.board[self.indexOfActiveCreature]) {
         return self.indexOfActiveCreature;
     }
     
@@ -138,25 +147,25 @@
     switch ([creature direction]) {
         case CreatureDirectionNorth : {
             if (creaturePoint.x == 0)
-                return -1;
+                return NSNotFound;
             --creaturePoint.x;
             break;
         }
         case CreatureDirectionEast : {
             if (creaturePoint.y == self.numberOfColumns - 1)
-                return -1;
+                return NSNotFound;
             ++creaturePoint.y;
             break;
         }
         case CreatureDirectionSouth : {
             if (creaturePoint.x == self.numberOfRows - 1)
-                return -1;
+                return NSNotFound;
             ++creaturePoint.x;
             break;
         }
         case CreatureDirectionWest : {
             if (creaturePoint.y == 0)
-                return -1;
+                return NSNotFound;
             --creaturePoint.y;
             break;
         }

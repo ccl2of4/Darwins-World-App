@@ -23,9 +23,13 @@
 @property (readonly, nonatomic) NSUInteger numberOfRows;
 @property (readonly, nonatomic) NSUInteger numberOfColumns;
 
+- (id) initWithRows:(NSUInteger)rows columns:(NSUInteger)columns;
+
 - (void) addCreature:(Creature *)creature point:(CGPoint)point;
 - (void) addCreature:(Creature *)creature index:(NSUInteger)index;
 - (void) run:(NSUInteger)numberOfTurns;
+
+- (Creature *) creatureAtPoint:(CGPoint)point;
 
 /* enumerates entire board int left->right top->down fashion. creature is NULL if the board is empty for the given point */
 - (void)enumerateCreaturesOnBoardUsingBlock:(void (^)(Creature *creature, CGPoint point, BOOL *stop))block;

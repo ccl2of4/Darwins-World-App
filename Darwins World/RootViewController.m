@@ -104,9 +104,7 @@
     
     return _fetchedResultsController;
 }
--(void)setFetchedResultsController:(NSFetchedResultsController *)fetchedResultsController {
-    _fetchedResultsController = fetchedResultsController;
-}
+
 -(UITableView *)tableView {
     return _tableView;
 }

@@ -18,6 +18,20 @@
 
 @implementation Creature
 
+- (id) init {
+    [[NSException exceptionWithName:@"Illegal method" reason:@"Cannot initialize creature without species" userInfo:nil] raise];
+    return nil;
+}
+
+-(id)initWithSpecies:(Species *)species {
+    self = [super init];
+    if (self) {
+        [self setSpecies:species];
+        [self setDirection:CreatureDirectionNorth];
+    }
+    return self;
+}
+
 - (void) handleTurn {
     while (true) {
         NSArray *instructions = [self.species sortedInstructions];
@@ -89,11 +103,12 @@
 }
 
 - (void) rotateLeft {
-    if (--self.direction < CreatureDirectionNorth)
+    if ((int)--self.direction < (int)CreatureDirectionNorth)
         self.direction = CreatureDirectionWest;
 }
 
 - (void)infectCreature:(Creature *)victim {
+    assert ([victim isKindOfClass:[Creature class]]);
     assert(![[victim species] isEqual:[self species]]);
     
     [victim setSpecies:[self species]];

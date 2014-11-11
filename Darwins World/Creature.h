@@ -30,6 +30,8 @@ typedef enum CreatureDirection {
     CreatureDirectionWest
 } CreatureDirection;
 
+- (id) initWithSpecies:(Species *)species;
+
 @property (weak, nonatomic) id<CreatureDelegate> delegate;
 @property (readonly, nonatomic) Species *species;
 @property (nonatomic) CreatureDirection direction;
