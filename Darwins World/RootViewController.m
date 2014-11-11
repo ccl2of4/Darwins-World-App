@@ -9,6 +9,7 @@
 #import "RootViewController.h"
 #import "NSManagedObjectContext+DarwinsWorld.h"
 #import "EditSpeciesViewController.h"
+#import "PlayViewController.h"
 #import "Species.h"
 
 #import <CoreData/CoreData.h>
@@ -40,7 +41,8 @@
 }
 
 - (IBAction)handleButtonTouchUpInside:(id)sender {
-    
+    PlayViewController *vc = [PlayViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
