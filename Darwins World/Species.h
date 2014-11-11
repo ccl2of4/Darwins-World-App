@@ -2,7 +2,7 @@
 //  Species.h
 //  Darwins World
 //
-//  Created by Connor Lirot on 11/10/14.
+//  Created by Connor Lirot on 11/11/14.
 //  Copyright (c) 2014 Connor Lirot. All rights reserved.
 //
 
@@ -15,6 +15,7 @@
 
 @property (nonatomic, retain) NSString * name;
 @property (nonatomic, retain) NSSet *instructions;
+- (NSArray *) sortedInstructions;
 @end
 
 @interface Species (CoreDataGeneratedAccessors)

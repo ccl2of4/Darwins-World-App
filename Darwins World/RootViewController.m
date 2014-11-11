@@ -8,9 +8,10 @@
 
 #import "RootViewController.h"
 #import "NSManagedObjectContext+DarwinsWorld.h"
-#import <CoreData/CoreData.h>
-
+#import "EditSpeciesViewController.h"
 #import "Species.h"
+
+#import <CoreData/CoreData.h>
 
 @interface RootViewController () <UITableViewDataSource, UITableViewDelegate,NSFetchedResultsControllerDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -39,14 +40,18 @@
 }
 
 - (IBAction)handleButtonTouchUpInside:(id)sender {
+    
 }
 
--(void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath {
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    EditSpeciesViewController *vc = [EditSpeciesViewController new];
+    
     if (indexPath.row < [[[[self fetchedResultsController] sections] firstObject] numberOfObjects]) {
-        
-    } else {
-        
+        Species *species = [[self fetchedResultsController] objectAtIndexPath:indexPath];
+        [vc setSpecies:species];
     }
+    
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {

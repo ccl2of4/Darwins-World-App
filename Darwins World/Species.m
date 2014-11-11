@@ -2,7 +2,7 @@
 //  Species.m
 //  Darwins World
 //
-//  Created by Connor Lirot on 11/10/14.
+//  Created by Connor Lirot on 11/11/14.
 //  Copyright (c) 2014 Connor Lirot. All rights reserved.
 //
 
@@ -14,5 +14,11 @@
 
 @dynamic name;
 @dynamic instructions;
+
+-(NSArray *)sortedInstructions {
+    return [[[self instructions] allObjects] sortedArrayUsingComparator:^NSComparisonResult(id obj1, id obj2) {
+        return [obj1 index] < [obj2 index];
+    }];
+}
 
 @end

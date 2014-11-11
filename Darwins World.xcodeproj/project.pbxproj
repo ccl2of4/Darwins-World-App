@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B3007DF01A11EE0D0074D715 /* EditSpeciesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3007DEE1A11EE0D0074D715 /* EditSpeciesViewController.m */; };
+		B3007DF11A11EE0D0074D715 /* EditSpeciesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3007DEF1A11EE0D0074D715 /* EditSpeciesViewController.xib */; };
+		B3007E011A11F7570074D715 /* Instruction.m in Sources */ = {isa = PBXBuildFile; fileRef = B3007E001A11F7570074D715 /* Instruction.m */; };
+		B3007E041A11F7570074D715 /* Species.m in Sources */ = {isa = PBXBuildFile; fileRef = B3007E031A11F7570074D715 /* Species.m */; };
 		B34B7E8E1A11837300915F1E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B34B7E8D1A11837300915F1E /* main.m */; };
 		B34B7E911A11837300915F1E /* DWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B34B7E901A11837300915F1E /* DWAppDelegate.m */; };
 		B34B7E941A11837300915F1E /* Darwins_World.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B34B7E921A11837300915F1E /* Darwins_World.xcdatamodeld */; };
@@ -16,8 +20,6 @@
 		B3B0622F1A118762005D8D78 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3B0622D1A118762005D8D78 /* RootViewController.xib */; };
 		B3B062351A118A7F005D8D78 /* NSManagedObjectContext+DarwinsWorld.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B062341A118A7F005D8D78 /* NSManagedObjectContext+DarwinsWorld.m */; };
 		B3B062371A118AE3005D8D78 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3B062361A118AE3005D8D78 /* Default-568h@2x.png */; };
-		B3B062401A118CE7005D8D78 /* Instruction.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B0623F1A118CE7005D8D78 /* Instruction.m */; };
-		B3B062431A118CE8005D8D78 /* Species.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B062421A118CE8005D8D78 /* Species.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +33,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B3007DED1A11EE0D0074D715 /* EditSpeciesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditSpeciesViewController.h; sourceTree = "<group>"; };
+		B3007DEE1A11EE0D0074D715 /* EditSpeciesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditSpeciesViewController.m; sourceTree = "<group>"; };
+		B3007DEF1A11EE0D0074D715 /* EditSpeciesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditSpeciesViewController.xib; sourceTree = "<group>"; };
+		B3007DF51A11F0DE0074D715 /* EditSpeciesViewController+Protected.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EditSpeciesViewController+Protected.h"; sourceTree = "<group>"; };
+		B3007DFF1A11F7570074D715 /* Instruction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Instruction.h; sourceTree = "<group>"; };
+		B3007E001A11F7570074D715 /* Instruction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Instruction.m; sourceTree = "<group>"; };
+		B3007E021A11F7570074D715 /* Species.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Species.h; sourceTree = "<group>"; };
+		B3007E031A11F7570074D715 /* Species.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Species.m; sourceTree = "<group>"; };
 		B34B7E881A11837300915F1E /* Darwins World.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Darwins World.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B34B7E8C1A11837300915F1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B34B7E8D1A11837300915F1E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -47,10 +57,6 @@
 		B3B062331A118A68005D8D78 /* NSManagedObjectContext+DarwinsWorld.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectContext+DarwinsWorld.h"; sourceTree = "<group>"; };
 		B3B062341A118A7F005D8D78 /* NSManagedObjectContext+DarwinsWorld.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectContext+DarwinsWorld.m"; sourceTree = "<group>"; };
 		B3B062361A118AE3005D8D78 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		B3B0623E1A118CE7005D8D78 /* Instruction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Instruction.h; sourceTree = "<group>"; };
-		B3B0623F1A118CE7005D8D78 /* Instruction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Instruction.m; sourceTree = "<group>"; };
-		B3B062411A118CE8005D8D78 /* Species.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Species.h; sourceTree = "<group>"; };
-		B3B062421A118CE8005D8D78 /* Species.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Species.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,10 @@
 				B3B0622B1A118762005D8D78 /* RootViewController.h */,
 				B3B0622C1A118762005D8D78 /* RootViewController.m */,
 				B3B0622D1A118762005D8D78 /* RootViewController.xib */,
+				B3007DED1A11EE0D0074D715 /* EditSpeciesViewController.h */,
+				B3007DF51A11F0DE0074D715 /* EditSpeciesViewController+Protected.h */,
+				B3007DEE1A11EE0D0074D715 /* EditSpeciesViewController.m */,
+				B3007DEF1A11EE0D0074D715 /* EditSpeciesViewController.xib */,
 				B34B7E9B1A11837300915F1E /* Images.xcassets */,
 				B34B7E8B1A11837300915F1E /* Supporting Files */,
 			);
@@ -136,10 +146,10 @@
 		B3B062191A1185FF005D8D78 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				B3B062411A118CE8005D8D78 /* Species.h */,
-				B3B062421A118CE8005D8D78 /* Species.m */,
-				B3B0623E1A118CE7005D8D78 /* Instruction.h */,
-				B3B0623F1A118CE7005D8D78 /* Instruction.m */,
+				B3007E021A11F7570074D715 /* Species.h */,
+				B3007E031A11F7570074D715 /* Species.m */,
+				B3007DFF1A11F7570074D715 /* Instruction.h */,
+				B3007E001A11F7570074D715 /* Instruction.m */,
 				B34B7E921A11837300915F1E /* Darwins_World.xcdatamodeld */,
 			);
 			name = Model;
@@ -228,6 +238,7 @@
 				B3B0622F1A118762005D8D78 /* RootViewController.xib in Resources */,
 				B34B7E9C1A11837300915F1E /* Images.xcassets in Resources */,
 				B3B062371A118AE3005D8D78 /* Default-568h@2x.png in Resources */,
+				B3007DF11A11EE0D0074D715 /* EditSpeciesViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,13 +256,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3B062401A118CE7005D8D78 /* Instruction.m in Sources */,
 				B34B7E941A11837300915F1E /* Darwins_World.xcdatamodeld in Sources */,
 				B3B0622E1A118762005D8D78 /* RootViewController.m in Sources */,
-				B3B062431A118CE8005D8D78 /* Species.m in Sources */,
+				B3007E011A11F7570074D715 /* Instruction.m in Sources */,
 				B34B7E911A11837300915F1E /* DWAppDelegate.m in Sources */,
 				B3B062351A118A7F005D8D78 /* NSManagedObjectContext+DarwinsWorld.m in Sources */,
 				B34B7E8E1A11837300915F1E /* main.m in Sources */,
+				B3007DF01A11EE0D0074D715 /* EditSpeciesViewController.m in Sources */,
+				B3007E041A11F7570074D715 /* Species.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
